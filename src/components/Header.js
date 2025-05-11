@@ -8,7 +8,7 @@ const Header = () => {
 
   return ( 
     
-  <header className='py-2 bg-white'>
+  <header className='py-2'>
     
     <div className="relative z-10 p-1">
     <div className="container md:mx-0 lg:mx-auto flex justify-between items-center">

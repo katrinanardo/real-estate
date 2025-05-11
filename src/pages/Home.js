@@ -16,8 +16,13 @@ import Contact from '../components/Contact';
 
 const Home = () => {
   return <div className='min-h-[1880px]'>
+
+    <div className="bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage:
+"url(https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/mtn%20falls%20pond.jpg/:/rs=w:1279,m) ", }}>
     <Header/>
     <Banner />
+    </div>
     <ContentTop/>
     {/* <Search /> */}
     <BannerSearch/>

@@ -2,7 +2,7 @@ import React from 'react';
 import {FaPhoneAlt} from "react-icons/fa";
 
 const ContentTop = () => {
-  return <section className='h-full lg:max-h-[640px] pb-[70px]  bg-white flex justify-center items-center'>
+  return <section className='h-screen lg:max-h-[screen] pb-[70px]  bg-white flex justify-center items-center'>
     <div className='flex flex-col lg:flex-row w-[1200px] justify-around lg:pt-[70px]'>
       <div className ='hidden lg:flex justify-start items-start'>
         <img className='h-[550px] rounded-[50px] shadow-lg lg:shadow-2xl ' src='https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/photo-5db79f9.jpg/:/cr=t:14.65%25,l:0%25,w:100%25,h:66.64%25/rs=w:730,h:730,cg:true'></img>

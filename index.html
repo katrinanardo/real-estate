@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="https://unpkg.com/boxicons@2.1.4/svg/regular/bx-home-alt-2.svg" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Marci Metzger Homes | Real Estate Agent</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+    <nav class="nav container">
+        <a href="#" class="nav__logo" id="header-logo">
+        <img id="logo-img" src="assets/img/marci-metzger-transparent-header-logo.png" alt="">
+        </a>
+
+        <!-- Burger icon -->
+        <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-menu"></i>
+        </div>
+
+        <!-- Menu -->
+        <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="#listings" class="nav__link">Listings</a></li>
+            <li class="nav__item"><a href="#letsmove" class="nav__link">Let's Move</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link">About Us</a></li>
+        </ul>
+        </div>
+    </nav>
+    </header>
+
+
+    <main class="main">
+      <section class="hero">
+        <div class="hero__media">
+            <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/5570%20Ailanto-50.jpg-SMALL.JPG/:/rs=w:984,h:655" alt="Luxury modern home">
+            <div class="hero__overlay"></div>
+        </div>
+
+        <div class="hero__content">
+            <h1 class="hero__title">Marci Metzger</h1>
+
+            <span class="hero__subtitle">
+            LUXURY REAL ESTATE SPECIALIST
+            </span>
+
+            <p class="hero__tagline">
+            Making Your Dream Home a Reality
+            </p>
+
+            <a href="#contact" class="hero__button">
+            Get In Touch
+            </a>
+        </div>
+
+        <div class="hero__scroll">
+            <span></span>
+        </div>
+    </section>
+
+    <section class="about section" id="about">
+    <div class="about__container container">
+        
+        <!-- Image -->
+        <div class="about__image">
+        <img src="assets/img/marci-metzger.png" alt="Marci Metzger">
+        </div>
+
+        <!-- Content -->
+        <div class="about__content">
+        <h2 class="about__title">About Marci</h2>
+
+        <p>
+            With over 15 years of experience in luxury real estate, Marci Metzger has
+            established herself as one of the premier agents in the region. Her
+            dedication to client satisfaction and deep knowledge of the local market
+            have earned her numerous accolades and a loyal client base.
+        </p>
+
+        <p>
+            Marci specializes in high-end residential properties, from stunning
+            waterfront estates to contemporary urban penthouses. Her personalized
+            approach ensures that every client receives the attention and expertise
+            they deserve.
+        </p>
+
+        <p>
+            Whether you're buying your dream home or selling a cherished property,
+            Marci's commitment to excellence and her extensive network make her the
+            ideal partner for your real estate journey.
+        </p>
+
+        <!-- Stats -->
+        <div class="about__stats">
+            <div class="about__stat">
+            <h3>250+</h3>
+            <span>Homes Sold</span>
+            </div>
+
+            <div class="about__stat">
+            <h3>$500M+</h3>
+            <span>Sales Volume</span>
+            </div>
+
+            <div class="about__stat">
+            <h3>15+</h3>
+            <span>Years Experience</span>
+            </div>
+
+            <div class="about__stat">
+            <h3>98%</h3>
+            <span>Client Satisfaction</span>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    </section>
+
+<section class="featured section" id="properties">
+  <div class="container">
+
+    <h2 class="featured__title">Featured Properties</h2>
+    <p>
+      Explore our carefully curated selection of luxury homes and exclusive listings
+    </p>
+
+    <div class="property__filters">
+
+      <!-- Row 1 -->
+      <div class="filter__row">
+        <div class="filter__field">
+          <label>Location</label>
+          <input type="text" placeholder="Enter location">
+        </div>
+
+        <div class="filter__field">
+          <label>Property Type</label>
+          <select>
+            <option>All Types</option>
+            <option>House</option>
+            <option>Condo</option>
+          </select>
+        </div>
+
+        <div class="filter__field">
+          <label>Bedrooms</label>
+          <select>
+            <option>Any</option>
+            <option>1+</option>
+            <option>2+</option>
+            <option>3+</option>
+          </select>
+        </div>
+
+        <div class="filter__field">
+          <label>Bathrooms</label>
+          <select>
+            <option>Any</option>
+            <option>1+</option>
+            <option>2+</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="filter__row">
+        <div class="filter__field">
+          <label>Min Price</label>
+          <input type="number" placeholder="$ 500">
+        </div>
+
+        <div class="filter__field">
+          <label>Max Price</label>
+          <input type="number" placeholder="Max price">
+        </div>
+
+        <div class="filter__field">
+          <label>Sort By</label>
+          <select>
+            <option>Price: High to Low</option>
+            <option>Price: Low to High</option>
+            <option>Newest</option>
+          </select>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="popular section" id="popular">
+    <div class="container">
+        <div class="gallery">
+            <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/4460%20Roseworthy-52.jpg-SMALL.JPG" alt="img1">
+            <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/5570%20Ailanto-45.jpg-SMALL.JPG" alt="img2">
+            <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/4787%20E%20Beacon%20Ridge-54.jpg-SMALL.JPG" alt="img3">
+            <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/4787%20E%20Beacon%20Ridge-41.jpg-SMALL.JPG" alt="img4">
+            <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/5570%20Ailanto-50.jpg-SMALL.JPG" alt="img5">
+            <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/5570%20Ailanto-14.jpg-SMALL.JPG" alt="img6">
+            
+        </div>
+
+        <div class="lightbox" id="lightbox">
+            <img src="" alt="lightbox image">
+        </div>
+        
+        </div>
+    </div>
+</section>
+
+<section id="services" class="services section">
+  <div class="services__container container">
+
+    <h2 class="services__title">Services Offered</h2>
+    <p>
+      Comprehensive real estate solutions tailored to your unique needs
+    </p>
+
+    <div class="services__grid">
+
+      <article class="service__card">
+        <div class="service__icon">
+          <i class="bx bx-home"></i>
+        </div>
+        <h3>Real Estate Done Right</h3>
+        <p>Nervous about your property adventure? Don’t be. Whether you're getting ready to buy or sell your residence, looking at investment properties, or just curious about the markets, our team ensures you get the best experience possible!</p>
+      </article>
+
+      <article class="service__card">
+        <div class="service__icon">
+          <i class="bx bx-key"></i>
+        </div>
+        <h3>Commercial & Residential</h3>
+        <p>Large or small, condo or mansion, we can find it and get at the price that's right. Fixer-uppers? Luxury? We can help with all of it! We live, work, and play in this community. Happy to help you find where to put you hard-earned dollars.</p>
+      </article>
+
+      <article class="service__card">
+        <div class="service__icon">
+          <i class="bx bx-trending-up"></i>
+        </div>
+        <h3>Rely on Expertise</h3>
+        <p>If you have questions about affordability, credit, and loan options, trust us to connect you with the right people to get the answers you need in a timely fashion. We make sure you feel confident and educated every step of the way.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="affiliated-groups-section">
+  <div class="affiliated-groups-container">
+    <h2>Professional Affiliations</h2>
+    <p class="intro-text">
+      Proud member of leading real estate organizations and networks
+    </p>
+
+    <div class="affiliated-groups-grid">
+      <!-- Group 1 -->
+      <div class="group-card">
+        <div class="group-logo">
+          <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/BIG%20CIRCLE%202.png/:/rs=w:100,h:100,cg:true,m/cr=w:100,h:100" alt="">
+        </div>
+        <p class="group-name">The Ridge Realty Group</p>
+      </div>
+
+      <!-- Group 2 -->
+      <div class="group-card">
+        <div class="group-logo">
+          <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/Equal%20Housing%20Logo.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:80,h:80,cg:true" alt="">
+        </div>
+        <p class="group-name">Equal Housing Opportunity</p>
+      </div>
+
+      <!-- Group 3 -->
+      <div class="group-card">
+        <div class="group-logo">
+          <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/Realtor%20Pin.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:112,h:100,cg:true" alt="">
+        </div>
+        <p class="group-name">Realtor®</p>
+      </div>
+
+      <!-- Group 4 -->
+      <div class="group-card">
+        <div class="group-logo">
+          <img src="https://img1.wsimg.com/isteam/ip/067a4d42-19e8-46d9-9bed-578bf62dd44e/Chamber.jpg/:/rs=w:100,h:100,cg:true,m/cr=w:100,h:100" alt="">
+        </div>
+        <p class="group-name">Pahrump Valley Chamber of Commerce</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="socials-section">
+  <div class="socials-container">
+    <h2>Stay Connected</h2>
+    <p class="intro-text">
+      Follow me for the latest listings, market insights, and real estate tips
+    </p>
+
+    <!-- Social Icons -->
+    <div class="social-icons">
+      <a href="https://www.facebook.com/MarciHomes/" target="_blank" aria-label="Facebook" class="social-icon">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/marciandlauren_nvrealtors/" target="_blank" aria-label="Instagram" class="social-icon">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram">
+      </a>
+      <a href="https://www.linkedin.com/in/marci-metzger-30642496/" target="_blank" aria-label="LinkedIn" class="social-icon">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn">
+      </a>
+      <a href="https://www.yelp.com/biz/xr3yQN_m2SgO0R_7S6p62w" target="_blank" aria-label="Yelp" class="social-icon">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/yelp.svg" alt="Yelp">
+      </a>
+    </div>
+
+
+    <!-- Contact Buttons -->
+    <div class="contact-buttons">
+      <a href="tel:2069196886" class="contact-btn">
+        <!-- Phone SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.86 19.86 0 01-8.63-3.17 19.5 19.5 0 01-6-6A19.86 19.86 0 012 4.18 2 2 0 014 2h3a2 2 0 012 1.72 12.05 12.05 0 00.7 2.81 2 2 0 01-.45 2.11l-1.27 1.27a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.05 12.05 0 002.81.7A2 2 0 0122 16.92z"/>
+        </svg>
+        (206) 919-6886
+      </a>
+      <a href="https://wa.me/14259412560" target="_blank" class="contact-btn">
+        <!-- Phone SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.86 19.86 0 01-8.63-3.17 19.5 19.5 0 01-6-6A19.86 19.86 0 012 4.18 2 2 0 014 2h3a2 2 0 012 1.72 12.05 12.05 0 00.7 2.81 2 2 0 01-.45 2.11l-1.27 1.27a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.05 12.05 0 002.81.7A2 2 0 0122 16.92z"/>
+        </svg>
+        WhatsApp
+      </a>
+      <a href="mailto:marci@marcimetzger.com" class="contact-btn">
+        <!-- Mail SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M4 4h16v16H4z"/>
+          <path d="M22 6l-10 7L2 6"/>
+        </svg>
+        marci@marcimetzger.com
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+    <h2>Get In Touch</h2>
+    <p class="intro-text">
+      Ready to start your real estate journey? Contact me today for a personalized consultation
+    </p>
+
+    <div class="contact-grid">
+      <!-- Contact Form -->
+      <div class="contact-card">
+        <h3>Send a Message</h3>
+        <form onsubmit="alert('Thank you! Your message has been sent. I\'ll get back to you soon.'); return false;">
+          <div>
+            <label for="name">Full Name *</label>
+            <input id="name" name="name" type="text" placeholder="John Doe" required>
+          </div>
+          <div>
+            <label for="email">Email Address *</label>
+            <input id="email" name="email" type="email" placeholder="john@example.com" required>
+          </div>
+          <div>
+            <label for="phone">Phone Number</label>
+            <input id="phone" name="phone" type="tel" placeholder="(555) 123-4567">
+          </div>
+          <div>
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell me about your real estate needs..." required></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Contact Information -->
+      <div>
+        <div class="contact-card info-card">
+          <h3>Contact Information</h3>
+          <div class="info-item">
+            <div class="icon-circle">
+              <!-- MapPin SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M12 11c1.656 0 3-1.344 3-3s-1.344-3-3-3-3 1.344-3 3 1.344 3 3 3z"/>
+                <path d="M12 22s8-8 8-13a8 8 0 10-16 0c0 5 8 13 8 13z"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Office Address</h4>
+              <p>3190 HW-160, Suite F, Pahrump, Nevada 89048, United States</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="icon-circle">
+              <!-- Phone SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.86 19.86 0 01-8.63-3.17 19.5 19.5 0 01-6-6A19.86 19.86 0 012 4.18 2 2 0 014 2h3a2 2 0 012 1.72 12.05 12.05 0 00.7 2.81 2 2 0 01-.45 2.11l-1.27 1.27a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.05 12.05 0 002.81.7A2 2 0 0122 16.92z"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Phone</h4>
+              <p><a href="tel:2069196886">(206) 919-6886</a></p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="icon-circle">
+              <!-- Mail SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M4 4h16v16H4z"/>
+                <path d="M22 6l-10 7L2 6"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:marci@marcimetzger.com">marci@marcimetzger.com</a></p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="icon-circle">
+              <!-- Clock SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Office Hours</h4>
+              <p>
+                Open daily   8:00 am - 7:00 pm
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map Placeholder -->
+        <div class="map-placeholder">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M12 11c1.656 0 3-1.344 3-3s-1.344-3-3-3-3 1.344-3 3 1.344 3 3 3z"/>
+            <path d="M12 22s8-8 8-13a8 8 0 10-16 0c0 5 8 13 8 13z"/>
+          </svg>
+          <p>Miami Beach, FL 33139</p>
+          <a href="https://maps.google.com/?q=Miami+Beach+FL+33139" target="_blank" rel="noopener noreferrer">Open in Google Maps</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="contact-footer">
+      <p>© 2026 Marci Metzger Real Estate. All rights reserved.</p>
+      <p>Licensed Real Estate Agent | Equal Housing Opportunity</p>
+    </footer>
+  </div>
+</section>
+
+
+    <a href="" class="scrollup" id="scroll-up">
+        <i class='bx bxs-chevrons-up'></i>
+    </a>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
